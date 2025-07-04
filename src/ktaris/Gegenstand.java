@@ -4,9 +4,10 @@ public class Gegenstand {
     private String typ;
     private int faktor;
 
-    public Gegenstand(){}
+    public Gegenstand() {
+    }
 
-    public Gegenstand(String typ, int faktor){
+    public Gegenstand(String typ, int faktor) {
         this.typ = typ;
         this.faktor = faktor;
     }
