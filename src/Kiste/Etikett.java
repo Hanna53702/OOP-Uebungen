@@ -4,19 +4,16 @@ public class Etikett {
     private String Eigentuemer;
     private String Beschreibung;
 
+    public Etikett(String Eigentuemer, String Beschreibung){
+        this.Eigentuemer = Eigentuemer;
+        this.Beschreibung = Beschreibung;
+    }
+
     public String getEigentuemer() {
         return Eigentuemer;
     }
 
     public String getBeschreibung() {
         return Beschreibung;
-    }
-
-    public void setBeschreibung(String beschreibung) {
-        Beschreibung = beschreibung;
-    }
-
-    public void setEigentuemer(String eigentuemer) {
-        Eigentuemer = eigentuemer;
     }
 }

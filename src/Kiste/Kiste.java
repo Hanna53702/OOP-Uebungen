@@ -5,23 +5,24 @@ public class Kiste {
     private int breite;
     private int tiefe;
     private String farbe;
-    public Etikett etikett;
+    private Etikett etikett;
 
-    public Kiste(Etikett etikett){
 
-    }
-
-    public Kiste(int hoehe, int breite, int tiefe, String farbe, Etikett etikett) {
+    public Kiste(int hoehe, int breite, int tiefe, String farbe, String Eigentuemer, String Beschreibung) {
         this.hoehe = hoehe;
         this.breite = breite;
         this.tiefe = tiefe;
         this.farbe = farbe;
-        this.etikett = etikett;
+        this.etikett = new Etikett(Eigentuemer, Beschreibung);
     }
     public int getVolumen(){
         return hoehe*breite*tiefe;
     }
     public String getFarbe(){
         return this.farbe;
+    }
+
+    public Etikett getEtikett(){
+        return this.etikett;
     }
 }
