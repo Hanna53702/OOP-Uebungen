@@ -1,3 +1,5 @@
+package Sparbuch;
+
 public class MainSparbuch {
     public static void main(String[] args) {
         Sparbuch sb = new Sparbuch(1104712, 1000, 3);

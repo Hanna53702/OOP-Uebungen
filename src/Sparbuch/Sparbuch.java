@@ -1,3 +1,5 @@
+package Sparbuch;
+
 public class Sparbuch {
     private int kontonummer;
     private double kapital;
